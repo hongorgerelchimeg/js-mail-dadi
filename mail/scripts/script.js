@@ -3,16 +3,26 @@ const emailList = ['booleaner1@gmail.com', 'booleaner2@gmail.com', 'booleaner3@g
 
 console.log(emailList);
 
-// Client search email
+//DOM elements 
 
-const searchMail = prompt('scrivi email')
+let inputMail = document.querySelector('#userMail');
+let btnSend = document.querySelector('#send')
+
+// Login function
+
+btnSend.addEventListener('click', function() {
+
+//Logics start
+
+let userEmail = inputMail.value;
+console.log(userEmail);
 
 // Cycle for searching email from list
 
 let found = false;
 
 for (let i = 0; i < emailList.length; i++) {
-    if (emailList[i] == searchMail) {
+    if (emailList[i] == userEmail) {
         found = true;
     }
 }
@@ -20,15 +30,19 @@ for (let i = 0; i < emailList.length; i++) {
 console.log('found', found)
 
 // output answer 
+const output = document.querySelector('.output');
+
 
 if (found == false) {
     console.log('non esiste');
+    output.innerHTML = 'non esiste'
+    
 }  else {
     console.log('esiste');
+    output.innerHTML = `Ciao ${userEmail}, benvenuto!`
 }
 
-
-
+})
 
 // // Creamo random mail
 // // Questa funziona crea random domain mail

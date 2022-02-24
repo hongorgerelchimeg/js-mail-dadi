@@ -5,3 +5,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.user-profile {
+    margin-top: 50px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
