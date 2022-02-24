@@ -5,3 +5,63 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+    text-align: center;
+
+}
+
+.dice-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.base-structure {
+    min-width: 40vw;
+    min-height: 40vh;
+}
+
+.number-style {
+    margin-top: 1rem;
+    color: rgb(0, 255, 34);
+    text-shadow: black;
+    font-size: 2rem;
+    
+
+}
+
+.computer {
+    background-image: url(https://pngimg.com/uploads/robot/robot_PNG21.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.user {
+    background-image: url(https://www.pngall.com/wp-content/uploads/4/The-Witcher-Game-PNG-Image-HD.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.display-none { 
+    display: none;
+}
+
+.display {
+    display: block;
+}
+
+.rotate {
+    transform: scaleX(-1);
+}
+
+.vs {
+    font-size: 2rem;
+    color: rgb(227, 39, 39);
+}
